@@ -78,12 +78,12 @@ prediction = loaded_model.predict(t)
 if prediction[0] == "Iris-setosa":
     st.success("The predicted species is: Setosa")
     setosa_image = Image.open("Images/setosa.jpg")  # Replace with the path to your Setosa image
-    st.image(setosa_image, caption="Iris Setosa", use_column_width=True)
+    st.image(setosa_image, caption="Iris Setosa", use_container_width=True)
 elif prediction[0] == "Iris-versicolor":
     st.success("The predicted species is: Versicolor")
     versicolor_image = Image.open("Images/versicolor.jpg")  # Replace with the path to your Versicolor image
-    st.image(versicolor_image, caption="Iris Versicolor", use_column_width=True)
+    st.image(versicolor_image, caption="Iris Versicolor", use_container_width=True)
 elif prediction[0] == "Iris-virginica":
     st.success("The predicted species is: Virginica")
     virginica_image = Image.open("Images/virginica.jpg")  # Replace with the path to your Virginica image
-    st.image(virginica_image, caption="Iris Virginica", use_column_width=True)
+    st.image(virginica_image, caption="Iris Virginica", use_container_width=True)
