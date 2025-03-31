@@ -10,7 +10,7 @@ st.markdown(
     <style>
     /* Change the background color of the main content */
     .stApp {
-        background-color: #F3E5F5; /* Violet color */
+        background-color: #E6F7FF; /* Violet color */
     }
   
 
@@ -78,12 +78,12 @@ prediction = loaded_model.predict(t)
 if prediction[0] == "Iris-setosa":
     st.success("The predicted species is: Setosa")
     setosa_image = Image.open("Images/setosa.jpg")  # Replace with the path to your Setosa image
-    st.image(setosa_image, caption="Iris Setosa", use_container_width=True)
+    st.image(setosa_image, caption="Iris Setosa")
 elif prediction[0] == "Iris-versicolor":
     st.success("The predicted species is: Versicolor")
     versicolor_image = Image.open("Images/versicolor.jpg")  # Replace with the path to your Versicolor image
-    st.image(versicolor_image, caption="Iris Versicolor", use_container_width=True)
+    st.image(versicolor_image, caption="Iris Versicolor")
 elif prediction[0] == "Iris-virginica":
     st.success("The predicted species is: Virginica")
     virginica_image = Image.open("Images/virginica.jpg")  # Replace with the path to your Virginica image
-    st.image(virginica_image, caption="Iris Virginica", use_container_width=True)
+    st.image(virginica_image, caption="Iris Virginica")
