@@ -5,19 +5,19 @@ import seaborn as sns
 import joblib
 from PIL import Image  # For handling images
 
-st.markdown(
-    """
-    <style>
-    /* Change the background color of the main content */
-    .stApp {
-        background-color: #E6F7FF; /* Violet color */
-    }
+# st.markdown(
+#     """
+#     <style>
+#     /* Change the background color of the main content */
+#     .stApp {
+#         background-color: #E6F7FF; /* Violet color */
+#     }
   
 
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+#     </style>
+#     """,
+#     unsafe_allow_html=True
+# )
 
 
 
